@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pengumuman SNMPTN 2021</title>
+    <link rel="stylesheet" href="./css/index8c7a.css?v=0.1.21" />
+    <link rel="icon" href="./img/favicon.ico" />
+    <style>
+
+    </style>
+</head>
+
+<body id="body">
+    <div id="default" class="main">
+        <div id="index" class="index">
+            <div id="index-form" class="index-form">
+                <form class="index-form-content" id="index-form-form">
+                    <div class="index-form-content-logo">
+                        <img src="https://sbmptn.ui.ac.id/img/snmptn.png" class="index-form-content-logo-snmptn"
+                            alt="Logo">
+                        <img src="https://sbmptn.ui.ac.id/img/ltmpt.png" class="index-form-content-logo-ltmpt"
+                            alt="Logo">
+                    </div>
+                    <h1 class="index-form-content-title">HASIL SELEKSI SNMPTN 2021</h1>
+                    <span class="index-form-content-subtitle">Masukkan Data data Fake Generator yang dibutuhkan
+                        dibawah</span>
+                    <div class="index-form-content-form">
+                        <div class="index-form-content-form-field">
+                            <span class="index-form-content-form-field-caption">Nama Peserta</span>
+                            <input class="index-form-content-form-field-input" id="nama_peserta" type="text"
+                                placeholder="Nama Mahasiswa">
+                        </div>
+                        <div class="index-form-content-form-field">
+                            <span class="index-form-content-form-field-caption">Nomor Pendaftaran</span>
+                            <input class="index-form-content-form-field-input" id="nomor_pendaftaran" type="tel"
+                                placeholder="10 digit tertera pada kartu peserta SNMPTN (boleh kosong)" maxlength="10">
+                        </div>
+                        <div class="index-form-content-form-field">
+                            <span class="index-form-content-form-field-caption">NISN</span>
+                            <input class="index-form-content-form-field-input" id="nisn" type="tel"
+                                placeholder="10 digit NISN (boleh kosong)" maxlength="10">
+                        </div>
+                        <div class="index-form-content-form-field">
+                            <span class="index-form-content-form-field-caption">Asal Sekolah</span>
+                            <input class="index-form-content-form-field-input" id="asal_sekolah" type="text"
+                                placeholder="Sekolah Asal SMA/MTS/SMK">
+                        </div>
+                        <div class="index-form-content-form-field">
+                            <span class="index-form-content-form-field-caption">Provinsi</span>
+                            <select id="provinsi" class="index-form-content-form-field-input select-option">
+                                <option value="">-- Select --</option>
+                            </select>
+                        </div>
+                        <div class="index-form-content-form-field">
+                            <span class="index-form-content-form-field-caption">Kabupaten/Kota</span>
+                            <select id="kabupaten_kota" class="index-form-content-form-field-input select-option">
+                                <option value="">-- Select --</option>
+                            </select>
+                        </div>
+                        <div class="index-form-content-form-field" style="display: none;">
+                            <span class="index-form-content-form-field-caption">Kecamatan/Kota</span>
+                            <select hidden id="kecamatan_kota"
+                                class="index-form-content-form-field-input select-option">
+                                <option value="">-- Select --</option>
+                            </select>
+                        </div>
+                        <div class="index-form-content-form-field">
+                            <span class="index-form-content-form-field-caption">Universitas</span>
+                            <select id="universitas" class="index-form-content-form-field-input select-option">
+                                <option value="">-- Select --</option>
+                            </select>
+                        </div>
+                        <div class="index-form-content-form-field">
+                            <span class="index-form-content-form-field-caption">Jurusan</span>
+                            <select id="jurusan" class="index-form-content-form-field-input select-option">
+                                <option value="">-- Select --</option>
+                            </select>
+                        </div>
+                        <div class="index-form-content-form-field">
+                            <span class="index-form-content-form-field-caption">Program Studi</span>
+                            <select id="program_studi" class="index-form-content-form-field-input select-option">
+                                <option value="">-- Select --</option>
+                            </select>
+                        </div>
+                        <div class="index-form-content-form-field">
+                            <span class="index-form-content-form-field-caption">Tanggal Lahir</span>
+                            <div class="index-form-content-form-field-group">
+                                <input class="index-form-content-form-field-group-input" type="tel"
+                                    placeholder="Tanggal" id="index-form-birthday-day" minlength="1" maxlength="2">
+                                <span class="index-form-content-form-field-group-separator">/</span>
+                                <input class="index-form-content-form-field-group-input" type="tel" placeholder="Bulan"
+                                    id="index-form-birthday-month" minlength="1" maxlength="2">
+                                <span class="index-form-content-form-field-group-separator">/</span>
+                                <input class="index-form-content-form-field-group-input" type="tel" placeholder="Tahun"
+                                    id="index-form-birthday-year" minlength="4" maxlength="4">
+                            </div>
+                        </div>
+                    </div>
+                    <span class="index-form-content-alert" id="index-form-alert"></span>
+                    <div class="index-form-content-footer">
+                        <button type="submit" class="index-form-content-footer-submit" id="index-form-submit">LIHAT
+                            HASIL SELEKSI</button>
+                        <a href="https://sbmptn.ui.ac.id/pengumuman.pdf" target="_blank"
+                            class="index-form-content-footer-pdf">PENGUMUMAN HASIL
+                            SELEKSI SNMPTN 2021 (PDF)</a>
+                    </div>
+                </form>
+                <div class="index-form-border"></div>
+            </div>
+        </div>
+    </div>
+    <div id="main" class="main" style="display: none;">
+        <div id="index" class="index">
+            <div id="index-accepted" class="index-accepted">
+                <div class="index-accepted-header">
+                    <img src="https://sbmptn.ui.ac.id/img/snmptn.png" alt="Logo" class="index-accepted-header-icon">
+                    <div class="index-accepted-header-title">
+                        <h1 class="index-accepted-header-title-text">SELAMAT! ANDA DINYATAKAN LULUS SELEKSI SNMPTN 2021
+                        </h1>
+                    </div>
+                </div>
+                <div class="index-accepted-content">
+                    <div class="index-accepted-content-upper">
+                        <div class="index-accepted-content-upper-bio">
+                            <span class="index-accepted-content-upper-bio-nisn" id="index-accepted-nisn"></span>
+                            <span class="index-accepted-content-upper-bio-name" id="index-accepted-name"></span>
+                            <span class="index-accepted-content-upper-bio-program" id="index-accepted-program"></span>
+                            <span class="index-accepted-content-upper-bio-university"
+                                id="index-accepted-university"></span>
+                        </div>
+                        <img class="index-accepted-content-upper-qr" alt="QR" id="index-accepted-qr"
+                            src="./img/qrcode.jpg">
+                    </div>
+                    <div class="index-accepted-content-lower">
+                        <div class="index-accepted-content-lower-column index-accepted-content-lower-column-25">
+                            <div class="index-accepted-content-lower-column-field">
+                                <span class="index-accepted-content-lower-column-field-caption">Tanggal Lahir</span>
+                                <span class="index-accepted-content-lower-column-field-value"
+                                    id="index-accepted-birthday"></span>
+                            </div>
+                            <div class="index-accepted-content-lower-column-field">
+                                <span class="index-accepted-content-lower-column-field-caption">Asal Sekolah</span>
+                                <span class="index-accepted-content-lower-column-field-value"
+                                    id="index-accepted-school"></span>
+                            </div>
+                        </div>
+                        <div class="index-accepted-content-lower-column index-accepted-content-lower-column-25">
+                            <div class="index-accepted-content-lower-column-field">
+                                <span class="index-accepted-content-lower-column-field-caption">Kabupaten/Kota</span>
+                                <span class="index-accepted-content-lower-column-field-value"
+                                    id="index-accepted-regency"></span>
+                            </div>
+                            <div class="index-accepted-content-lower-column-field">
+                                <span class="index-accepted-content-lower-column-field-caption">Provinsi</span>
+                                <span class="index-accepted-content-lower-column-field-value"
+                                    id="index-accepted-province"></span>
+                            </div>
+                        </div>
+                        <div class="index-accepted-content-lower-column index-accepted-content-lower-column-50">
+                            <div class="index-accepted-content-lower-column-note">
+                                <span class="index-accepted-content-lower-column-note-title">Silakan lakukan pendaftaran
+                                    ulang.</span>
+                                <span class="index-accepted-content-lower-column-note-subtitle">Informasi pendaftaran
+                                    ulang di PTN/Politeknik Negeri dapat dilihat pada link berikut:</span>
+                                <a href="https://sbmptn.ui.ac.id" target="_blank"
+                                    class="index-accepted-content-lower-column-note-link"
+                                    id="index-accepted-link">https://sensor ini ya</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="index-accepted-footer">
+                    <p class="index-accepted-footer-paragraph">Status penerimaan Anda sebagai mahasiswa akan ditetapkan
+                        setelah PTN tujuan melakukan verifikasi data akademik (rapor dan/atau portofolio). Silakan Anda
+                        membaca peraturan tentang penerimaan mahasiswa baru di laman PTN tujuan. </p>
+                    <p class="index-accepted-footer-paragraph">Khusus peserta KIP Kuliah, PTN tujuan juga dapat
+                        melakukan verifikasi data ekonomi dan/atau kunjungan ke tempat tinggal Anda sebelum menetapkan
+                        status penerimaan Anda.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/universities.js"></script>
+    <script>
+        getRandom = (length) => '00' + Math.floor(Math.pow(10, length - 1) + Math.random() * 9 * Math.pow(10, length -
+            1));
+
+        getRandomNISN = () => getRandom(8)
+        getRandomNomorRegistrasi = () => getRandom(10)
+
+        applySentenceCase = (str) => {
+            return str.replace(
+                /\w\S*/g,
+                function (txt) {
+                    return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+                }
+            );
+        }
+
+        document.getElementById("index-form-submit").addEventListener("click", function (e) {
+            e.preventDefault()
+
+            let errorMessages = []
+
+            let nisn = (!document.getElementById('nisn').value || document.getElementById('nisn').value.length <
+                11) ? getRandomNISN() : document.getElementById('nisn').value
+            let nomor_pendaftaran = (!document.getElementById('nomor_pendaftaran').value || document
+                    .getElementById('nomor_pendaftaran').value.length < 11) ? getRandomNomorRegistrasi() :
+                document.getElementById(
+                    'nomor_pendaftaran').value
+
+            let nama_peserta = (document.getElementById('nama_peserta').value) ? document.getElementById(
+                    'nama_peserta')
+                .value : ''
+            if (!nama_peserta) errorMessages.push("Nama Peserta Masih Kosong")
+
+            let jurusan = (document.getElementById('jurusan').value) ? document.getElementById('jurusan')
+                .value : ''
+            if (!jurusan) errorMessages.push("Jurusan Masih Kosong")
+
+            let program_studi = (document.getElementById('program_studi').value) ? document.getElementById(
+                    'program_studi')
+                .value : ''
+            if (!program_studi) errorMessages.push("Program Studi Masih Kosong")
+
+            let universitas = (document.getElementById('universitas').value) ? document.getElementById(
+                'universitas').value : ''
+            if (!universitas) errorMessages.push("Universitas Masih Kosong")
+
+            let tanggal_lahir = document.getElementById('index-form-birthday-day').value
+            let bulan_lahir = document.getElementById('index-form-birthday-month').value
+            let tahun_lahir = document.getElementById('index-form-birthday-year').value
+
+            let tgl_lahir = `${tanggal_lahir}/${bulan_lahir}/${tahun_lahir}`
+            if (!tgl_lahir) errorMessages.push("Tanggal Lahir")
+
+            let kota = (document.getElementById('kabupaten_kota').value) ? document.getElementById(
+                'kabupaten_kota').value : ''
+            if (!kota) errorMessages.push("Kota Masih Kosong")
+
+            let asal_sekolah = (document.getElementById('asal_sekolah').value) ? document.getElementById(
+                'asal_sekolah').value : ''
+            if (!asal_sekolah) errorMessages.push("Asal Sekolah Masih Kosong")
+
+            let provinsi = (document.getElementById('provinsi').value) ? document.getElementById('provinsi')
+                .value : ''
+            if (!provinsi) errorMessages.push("Provinsi Masih Kosong")
+
+            if (errorMessages.length !== 0) {
+                alert(errorMessages.join("\n"))
+            } else {
+                document.getElementById('default').style.display = 'none'
+                document.getElementById('index-accepted-nisn').textContent =
+                    `NISN ${nisn} - NOREG ${nomor_pendaftaran}`
+                document.getElementById('index-accepted-name').textContent = nama_peserta.trim().toUpperCase()
+                document.getElementById('index-accepted-program').textContent = program_studi.trim()
+                    .toUpperCase()
+                document.getElementById('index-accepted-university').textContent = universitas
+                document.getElementById('index-accepted-birthday').textContent = tgl_lahir
+                document.getElementById('index-accepted-school').textContent = asal_sekolah.toUpperCase()
+                document.getElementById('index-accepted-regency').textContent = applySentenceCase(kota
+                    .toLowerCase())
+                document.getElementById('index-accepted-province').textContent =
+                    `Prov. ${applySentenceCase(provinsi.toLowerCase())}`
+                document.getElementById('main').style.display = ''
+            }
+        })
+
+        window.onload = function () {
+            var provinsi = document.getElementById("provinsi"),
+                kabkota = document.getElementById("kabupaten_kota"),
+                keckel = document.getElementById("kecamatan_kota");
+
+            for (var varPROV in dataObject) {
+                provinsi.options[provinsi.options.length] = new Option(varPROV, varPROV);
+            }
+            provinsi.onchange = function () {
+                kabkota.length = 1;
+                keckel.length = 1;
+                if (this.selectedIndex < 1) return;
+                for (var varKABKOTA in dataObject[this.value]) {
+                    kabkota.options[kabkota.options.length] = new Option(varKABKOTA, varKABKOTA);
+                }
+            }
+            provinsi.onchange();
+            kabkota.onchange = function () {
+                keckel.length = 1;
+                if (this.selectedIndex < 1) return;
+                var varKECKEL = dataObject[provinsi.value][this.value];
+                for (var i = 0; i < varKECKEL.length; i++) {
+                    keckel.options[keckel.options.length] = new Option(varKECKEL[i], varKECKEL[i]);
+                }
+            }
+
+            var kodeptn = document.getElementById("universitas"),
+                jurusan = document.getElementById("jurusan"),
+                prodi = document.getElementById("program_studi");
+            for (var varKODEPTN in dataPTN) {
+                kodeptn.options[kodeptn.options.length] = new Option(varKODEPTN, varKODEPTN);
+            }
+            kodeptn.onchange = function () {
+                jurusan.length = 1;
+                prodi.length = 1;
+                if (this.selectedIndex < 1) return;
+                for (var varJURUSAN in dataPTN[this.value]) {
+                    jurusan.options[jurusan.options.length] = new Option(varJURUSAN, varJURUSAN);
+                }
+            }
+            kodeptn.onchange();
+            jurusan.onchange = function () {
+                prodi.length = 1;
+                if (this.selectedIndex < 1) return;
+                var varPRODI = dataPTN[kodeptn.value][this.value];
+                for (var i = 0; i < varPRODI.length; i++) {
+                    prodi.options[prodi.options.length] = new Option(varPRODI[i], varPRODI[i]);
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
